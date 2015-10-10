@@ -1,0 +1,7 @@
+LIBRARY    "json-plugin"
+EXPORTS
+    Supports
+    Load
+    Unload
+    AmxLoad
+    AmxUnload

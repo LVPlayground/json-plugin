@@ -1,0 +1,6 @@
+.vs/
+Debug/
+Release/
+out/
+*.opensdf
+*.sdf
