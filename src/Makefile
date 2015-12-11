@@ -14,4 +14,4 @@ all:
 	g++ $(COMPILE_FLAGS) block_allocator.cpp -o out/block_allocator.o
 	g++ $(COMPILE_FLAGS) json.cpp -o out/json.o
 	g++ $(COMPILE_FLAGS) plugin.cpp -o out/plugin.o
-	g++ -O2 -m32 -fshort-wchar -shared -o out/$(OUTFILE) out/*.o
+	g++ -O2 -m32 -fshort-wchar -Wl,--export-dynamic -shared -o out/$(OUTFILE) out/*.o
